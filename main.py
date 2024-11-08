@@ -9,10 +9,25 @@ class cat:
         self.energy = 50
         self.intelligence = 5
         self.weight = 5
-        
+    
+    def train(self):
+        print(f"{self.name} is training..")
+        self.intelligence += 1
+        self.energy -= 5
+    
+    def eat(self):
+        print(f"{self.name} eats a nice meal..")
+        self.weight += 0.2
+        self.energy += 5
+
 
 
 # An instance of cat
 # An instance is a specific occurance of a class
 mimi = cat("Mimi", "Brown")
+astha = cat("Astha", "Black")
+astha.eat()
+# mimi.train()
+print(mimi.energy)
+print(astha.energy)
 
