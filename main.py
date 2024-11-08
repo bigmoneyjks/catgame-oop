@@ -5,6 +5,11 @@ class cat:
     def __init__(self, given_name, given_colour):     # __init__ stands for initialise
         self.name = given_name     # self is the current cat we are creating
         self.colour = given_colour
+        self.age = 1
+        self.energy = 50
+        self.intelligence = 5
+        self.weight = 5
+        
 
 
 # An instance of cat
